@@ -4,14 +4,16 @@ header{
     text-align: center;
     padding: 10px;
     margin : 20px;
+    border-radius: 10px;
+    background-size: cover;
 }
+
 body{
     background-color: #f8fafc;
     color: #000000;
     font-family: Arial, sans-serif;
     text-align : center;
     margin-left: 44px;
-
 }
 
 
@@ -134,4 +136,12 @@ body{
   
 .main.shift {
     margin-left: 250px;
+}
+div{
+    margin:20px;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    background-color: #b7e7f3;
+    border-radius: 10px;
 }
