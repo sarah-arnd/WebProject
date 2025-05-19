@@ -84,25 +84,35 @@ body{
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
-  }
+}
+
+#bottom{
+  color: white;
+  margin-top: 40vh;
+  border: #40c1e1 solid 2px;
   
-  .sidebar a {
+}
+  
+.sidebar a {
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
     color: white;
     display: block;
-  }
+    margin-left: 40px;
+
+    
+}
   
-  .sidebar a:hover {
+.sidebar a:hover {
     background-color: #057943;
-  }
+}
   
-  .open-btn {
+.open-btn {
     font-size: 24px;
     cursor: pointer;
     height: 100vh;
-    background-color: #b97739;
+    background-color: #40c1e1;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -110,18 +120,18 @@ body{
     top: 0px;
     left: 0px;
     z-index: 1000;
-  }
+}
   
-  .sidebar.active {
+.sidebar.active {
     left: 0;
-  }
+}
   
-  .main {
+.main {
     margin-left: 0;
     transition: margin-left 0.3s;
     padding: 20px;
-  }
+}
   
-  .main.shift {
+.main.shift {
     margin-left: 250px;
-  }
+}
