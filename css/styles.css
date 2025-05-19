@@ -10,8 +10,67 @@ body{
     color: #000000;
     font-family: Arial, sans-serif;
     text-align : center;
+    margin-left: 44px;
 
 }
+
+
+
+
+.container {
+  margin: 10px;
+  display: flex;
+  font-size: large;
+  padding: 10px;
+  flex-wrap: wrap; 
+
+}
+
+.destinations{
+  flex: 0 0 48%;
+  color: black;
+  border: #000000;
+  border-style:solid;
+  color: black;
+  margin-bottom: 100px;
+  margin-left: 25px;
+}
+
+.destination_image {
+  width: 100%;   
+  height: auto;
+  display: block;
+
+}
+
+.title{
+  font-size: x-large;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+#poland{
+  background-image: url(../imgs/poland_flag.jpg);
+}
+#canada{
+  background-image: url(../imgs/canada_flag.jpg);
+}
+#china{
+  background-image: url(../imgs/china_flag.jpg);
+}
+#czechRepublic{
+  background-image: url(../imgs/cz_flag.jpg);
+}
+#england{
+  background-image: url(../imgs/england_flag.png);
+  background-position: top;
+}
+#hungaria{
+  background-image: url(../imgs/hungaria_flag.jpg);
+  background-position: top;
+}
+
 
 
 .sidebar {
@@ -66,4 +125,3 @@ body{
   .main.shift {
     margin-left: 250px;
   }
-  
