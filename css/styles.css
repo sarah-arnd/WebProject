@@ -4,19 +4,22 @@ header{
     text-align: center;
     padding: 10px;
     margin : 20px;
+    border-radius: 10px;
+    background-size: cover;
 }
+
 body{
     background-color: #f8fafc;
     color: #000000;
     font-family: Arial, sans-serif;
     text-align : center;
-    padding: 0 2vw;
-
+    margin-left: 44px;
 }
 
 * {
   box-sizing: border-box;
 }
+
 
 
 .container {
@@ -26,11 +29,11 @@ body{
   font-size: large;
   padding: 10px;
   flex-wrap: wrap; 
-
 }
 
+
 .destinations{
-  flex: 0 0 48%;
+  flex: 0 0 47%;
   color: black;
   border: #000000;
   border-style:solid;
@@ -39,11 +42,11 @@ body{
   margin-left: 1%;
 }
 
+
 .destination_image {
   width: 100%;   
   height: auto;
   display: block;
-
 }
 
 .title{
@@ -52,6 +55,7 @@ body{
   background-size: cover;
   background-position: center;
 }
+
 
 #poland{
   background-image: url(../imgs/poland_flag.jpg);
@@ -95,6 +99,7 @@ body{
   border: #40c1e1 solid 2px;
   
 }
+
 #secondBottom{
   color: white;
   border-bottom: #40c1e1 solid 2px;
@@ -142,4 +147,12 @@ body{
   
 .main.shift {
     margin-left: 250px;
+}
+div{
+    margin:20px;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    background-color: #b7e7f3;
+    border-radius: 10px;
 }
