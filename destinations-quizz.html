@@ -1,41 +1,63 @@
 <!DOCTYPE html>
-    <html lang="en"></html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Quizz</title>
-        <link rel="stylesheet" href="../CSS/styles.css">
+<html lang="en">
+<head>
+    <link rel= "stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <title>Canada</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+    <section>
+        <h1>Quizz!</h1>
+    </section>
+    <button class="open-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
         <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="destinations-quizz.html">Quizz</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-            </ul>
+            <a href="../home.html">Home Page</a>
+            <a href="India.html">India</a>
+            <a href="England.html">England</a>
+            <a href="Canada.html">Canada</a>
+            <a href="China.html">China</a>
+            <a href="CzechRepublic.html">Czech Republic</a>
+            <a href="Hungaria.html">Hungaria</a>
+            <a href="Malasia.html">Malaisia</a>
+            <a href="Poland.html">Poland</a>
+            <a href="SouthAfrica.html">South Africa</a>
+            <a href="USA.html">USA</a>
+            <a href="../destinations-quizz.html">Quizz</a>
+            <a href="about-us.html" id="bottom">About Us</a>
+            
         </nav>
-    </head>
+    </div>
 
-    <body>
-        <header>
-            <h1>Quizz</h1>
-        </header>
-        <main>
-            <section>
-                <h2>Test your knowledge</h2>
-                <p>Answer the following questions to see if you really know the 13 destinations ! </p>
-                <form id="quiz-form">
-                    <label for="question1">1. Question 1 ?</label><br>
-                    <input type="text" id="question1" name="question1"><br><br>
+      <main id="main" class="main">
+    <header>
+      <h1>Quiz</h1>
+    </header>
 
-                    <label for="question2">2. Question 2 ?</label><br>
-                    <input type="text" id="question2" name="question2"><br><br>
+    <section>
+      <h2>Test your knowledge</h2>
+      <p>Answer the following questions to see if you really know the 13 destinations!</p>
 
-                    <label for="question3">3. Question 3 ?</label><br>
-                    <input type="text" id="question3" name="question3"><br><br>
+      <form id="quiz-form">
+        <label for="question1">1. Question 1?</label><br />
+        <input type="text" id="question1" name="question1" /><br /><br />
 
-                    <input type="submit" value="Submit">
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2025 [insert company name]</p>
-        </footer>
+        <label for="question2">2. Question 2?</label><br />
+        <input type="text" id="question2" name="question2" /><br /><br />
+
+        <label for="question3">3. Question 3?</label><br />
+        <input type="text" id="question3" name="question3" /><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </main>
+    <script src="../javaLeScript.js"></script>
+
+</body>
