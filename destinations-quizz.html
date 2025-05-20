@@ -10,9 +10,6 @@
 </head>
 
 <body>
-    <section>
-        <h1>Quizz!</h1>
-    </section>
     <button class="open-btn" onclick="toggleSidebar()">☰</button>
 
     <!-- Sidebar -->
@@ -56,6 +53,22 @@
         <input type="submit" value="Submit" />
       </form>
     </section>
+
+    <section class="game-container">
+  <svg id="connections" class="connections-svg"></svg>
+
+  <section class="game">
+    <section class="countries">
+      <span class="item" onclick="selectCountry(this)" data-id="PlaceHolder">PlaceHolder</span>
+      <span class="item" onclick="selectCountry(this)" data-id="PlaceHolder2">PlaceHolder2</span>
+    </section>
+    <section class="characteristics">
+      <span class="item" onclick="selectCharacteristic(this)" data-id="PlaceHolder3">PlaceHolder3</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="PlaceHolder4">PlaceHolder4</span>
+    </section>
+  </section>
+</section>
+
   </main>
     <script src="../javaLeScript.js"></script>
 
