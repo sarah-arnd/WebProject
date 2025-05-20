@@ -7,6 +7,11 @@ header{
     border-radius: 10px;
     background-size: cover;
 }
+#logo{
+  width: 600px;
+  border-radius: 300px;
+  border: rgba(74, 107, 47, 0.753) solid 3px;
+}
 
 body{
     background-color: #f8fafc;

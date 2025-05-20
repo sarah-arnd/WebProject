@@ -1,27 +1,54 @@
 <!DOCTYPE html>
-    <html lang="en"></html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Us</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-        <header>
-            <h1>About Us</h1>
-        </header>
-        <main>
-            <section>
-                <h2>Our Mission</h2>
-                <p>We aim to help students know more about the destinations they can chose for the next semester, regarding ecology and more. </p>
-            </section>
+    <!-- Sidebar Button -->
+    <button class="open-btn" onclick="toggleSidebar()">☰</button>
 
-            <section>
-                <h2>Our Team</h2>
-                <p>This project is presented to you by Marceau Bilger and Sarah Arnaud, members of the class P2-INT3</p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2025 [insert company name]</p>
-        </footer>
+    <!-- Sidebar Navigation -->
+    <span class="sidebar" id="sidebar">
+        <nav>
+            <a href="home.html">Home Page</a>
+            <a href="Countries/India.html">India</a>
+            <a href="Countries/England.html">England</a>
+            <a href="Countries/Canada.html">Canada</a>
+            <a href="Countries/China.html">China</a>
+            <a href="Countries/CzechRepublic.html">Czech Republic</a>
+            <a href="Countries/Hungaria.html">Hungaria</a>
+            <a href="Countries/Malasia.html">Malaisia</a>
+            <a href="Countries/Poland.html">Poland</a>
+            <a href="Countries/SouthAfrica.html">South Africa</a>
+            <a href="Countries/USA.html">USA</a>
+            <a href="destinations-quizz.html" class="bottom">Quizz</a>
+            <a href="about-us.html" id="secondBottom">About Us</a>
+        </nav>
+    </span>
+    <script src="javaLeScript.js"></script>
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>We aim to help students learn more about the destinations they can choose for the next semester, focusing on environmental impact and cultural insights.</p>
+        </section>
+
+        <section>
+            <h2>Our Team</h2>
+            <p>This project is presented to you by Marceau Bilger and Sarah Arnaud, members of the class P2-INT3.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EcoTrails</p>
+    </footer>
+
+</body>
+</html>
