@@ -9,11 +9,14 @@ function toggleSidebar() {
 
 let selectedCountry = null;
 let matchCount = 0;
+let colorNum = 0;
 const connections = {};
 
 function getRandomColor() {
-  const hue = (matchCount * 60) % 360;
-  return `hsl(${hue}, 70%, 50%)`;
+  const color = ["blue","red","orange","green","yellow","grey","pink","purple","teal","lime","beige"];
+  colorNum+=1;
+  colorNum=colorNum%11;
+  return color[colorNum];
 }
 
 function selectCountry(element) {
