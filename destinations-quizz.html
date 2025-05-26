@@ -3,7 +3,7 @@
 <head>
     <link rel= "stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
-    <title>Canada</title>
+    <title>Quizz</title>
 
     <link rel="stylesheet" href="../css/styles.css">
 
@@ -39,34 +39,85 @@
     <section>
       <h2>Test your knowledge</h2>
       <p>Answer the following questions to see if you really know the 13 destinations!</p>
-
       <form id="quiz-form">
-        <label for="question1">1. Question 1?</label><br />
-        <input type="text" id="question1" name="question1" /><br /><br />
+        <div>1. What is the most eco-friendly way of transportation ?</div>
+        <fieldset>
+          <input type="radio" id="1a" name="Radio1" value="A">
+          <label>a) The train</label>
+        </fieldset>
+        <fieldset>
+          <input type="radio" id="1b" name="Radio1" value="B">
+          <label>b) A commercial flight</label>
+        </fieldset>
+        <fieldset>
+          <input type="radio" id="1c" name="Radio1" value="C">
+          <label>c) A car</label>
+        </fieldset>
+        </p>
 
-        <label for="question2">2. Question 2?</label><br />
-        <input type="text" id="question2" name="question2" /><br /><br />
+        <br>
+        <br>
 
-        <label for="question3">3. Question 3?</label><br />
-        <input type="text" id="question3" name="question3" /><br /><br />
+        <div>Which of the following destinations can be reached by train ?</div>
+        <fieldset>
+          <input type="checkbox" id="2a" name="Box1" value="first">
+          <label>a) China </label>
+        </fieldset>
+        <fieldset>
+          <input type="checkbox" id="2b" name="Box2" value="Second">
+          <label>b) Malaisia</label>
+          </fieldset>
+        <fieldset>
+          <input type="checkbox" id="2c" name="Box3" value="Third">
+          <label>c) The USA</label>
+        </fieldset>
+        <fieldset>
+          <input type="checkbox" id="2d" name="Box4" value="Fourth">
+          <label>d) Poland</label>
+        </fieldset>
 
-        <input type="submit" value="Submit" />
       </form>
     </section>
 
     <section class="game-container">
   <svg id="connections" class="connections-svg"></svg>
-
+  <br>
+  <br>
+  <h1><div>Connect the dots !</div></h1>
+  <p>Connect the countries to their main characteristic</p>
+  <br>
+  <br>
+  <br>
   <section class="game">
     <section class="countries">
-      <span class="item" onclick="selectCountry(this)" data-id="PlaceHolder">PlaceHolder</span>
-      <span class="item" onclick="selectCountry(this)" data-id="PlaceHolder2">PlaceHolder2</span>
+      <span class="item" onclick="selectCountry(this)" data-id="Canada">Canada</span>
+      <span class="item" onclick="selectCountry(this)" data-id="China">China</span>
+      <span class="item" onclick="selectCountry(this)" data-id="CzechRepublic">CzechRepublic</span>
+      <span class="item" onclick="selectCountry(this)" data-id="England">England</span>
+      <span class="item" onclick="selectCountry(this)" data-id="Hungaria">Hungaria</span>
+      <span class="item" onclick="selectCountry(this)" data-id="India">India</span>
+      <span class="item" onclick="selectCountry(this)" data-id="Malaisia">Malaisia</span>
+      <span class="item" onclick="selectCountry(this)" data-id="Poland">Poland</span>
+      <span class="item" onclick="selectCountry(this)" data-id="SouthAfrica">SouthAfrica</span>
+      <span class="item" onclick="selectCountry(this)" data-id="Usa">Usa</span>
     </section>
     <section class="characteristics">
-      <span class="item" onclick="selectCharacteristic(this)" data-id="PlaceHolder3">PlaceHolder3</span>
-      <span class="item" onclick="selectCharacteristic(this)" data-id="PlaceHolder4">PlaceHolder4</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="CzechRepublic1">Czech Republic characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="China1">China characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Malaisia1">Malaisia characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Poland1">Poland characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Hungaria1">Hugaria characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="India1">India characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Canada1">Canada characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Usa1">USA characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="SouthAfrica1">South Africa characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="England1">England characteristic</span>
+
     </section>
   </section>
+  <input type="submit" value="Submit" id="Submit" onclick="checkAnswers()" />
+  <input type="submit" value="Try again" id="retry" onclick="retryQuizz()" />
+  <div id="quizzScore"></div>
 </section>
 
   </main>

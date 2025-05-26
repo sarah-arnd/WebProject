@@ -10,7 +10,51 @@ function toggleSidebar() {
 let selectedCountry = null;
 let matchCount = 0;
 let colorNum = 0;
-const connections = {};
+let connections = {};
+let quizzPoints = 0;
+
+
+function checkAnswers(){
+
+  //checks answer for the connect the dots games
+  for (const [countryID, { characteristic }] of Object.entries(connections)) {
+    const charID = characteristic.getAttribute("data-id");
+    const modifiedCountryID=countryID+"1";
+    if (modifiedCountryID.trim() === charID.trim()) {
+      quizzPoints += 1;
+    }
+  }
+  const quizzScore = document.getElementById('quizzScore');
+  const button = document.getElementById('Submit');
+
+
+  //chacks answer for the questions
+
+  firstQuestion = document.getElementById("1a");
+  if(firstQuestion.checked){
+    quizzPoints+=2;
+  }
+
+  box1 = document.getElementById("2a");
+  box2 = document.getElementById("2b");
+  box3 = document.getElementById("2c");
+  box4 = document.getElementById("2d");
+  if(box1.checked){quizzPoints+=1;}
+  if(box2.checked){quizzPoints-=1;}
+  if(box3.checked){quizzPoints-=1;}
+  if(box4.checked){quizzPoints+=1;}
+
+  button.style.display="none";
+  quizzScore.style.display="block";
+  quizzScore.textContent ="Your score is : " + quizzPoints;
+
+  if(quizzPoints<10){quizzScore.textContent+= " You can do better than that ! ";}
+  if(quizzPoints>= 10 && quizzPoints<14){quizzScore.textContent+=" Almost there ! ";}
+  if(quizzPoints==14){quizzScore.textContent+=" Perfect ! ";}
+
+  retry = document.getElementById("retry");
+  retry.style.display = "block";
+}
 
 function getRandomColor() {
   const color = ["blue","red","orange","green","yellow","grey","pink","purple","teal","lime","beige"];
@@ -19,9 +63,12 @@ function getRandomColor() {
   return color[colorNum];
 }
 
+function retryQuizz(){        
+  location.reload();
+}
+
 function selectCountry(element) {
   const countryId = element.getAttribute('data-id');
-
   if (selectedCountry) {
     selectedCountry.classList.remove('selected');
   }

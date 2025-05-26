@@ -8,7 +8,8 @@ header{
     background-size: cover;
 }
 #logo{
-  width: 600px;
+  max-width: 600px;
+  width: 400px;
   border-radius: 300px;
   border: rgba(74, 107, 47, 0.753) solid 3px;
 }
@@ -33,13 +34,13 @@ body{
   display: flex;
   font-size: large;
   padding: 10px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 
 .destinations{
-  flex: 0 0 47%;
+  flex: 0 0 30%;
   color: black;
   border: #000000;
   border-style:solid;
@@ -62,6 +63,11 @@ body{
   background-position: center;
 }
 
+.mainImage{
+  max-width: 1000px;
+  width: 1000px;
+  max-height: 500px;
+}
 
 #poland{
   background-image: url(../imgs/poland_flag.jpg);
@@ -83,7 +89,19 @@ body{
   background-image: url(../imgs/hungaria_flag.jpg);
   background-position: top;
 }
-
+#india{
+  background-image: url(../imgs/india_flag.jpg);
+}
+#malaisia{
+  background-image: url(../imgs/malaisia_flag.png);
+  background-position: top;
+}
+#southAfrica{
+  background-image: url(../imgs/southAfrica_flag.png);
+}
+#usa{
+  background-image: url(../imgs/usa_flag.png);
+}
 
 
 .sidebar {
@@ -214,4 +232,8 @@ div{
   height: 100%;
   pointer-events: none;
   z-index: 0;
+}
+
+#quizzScore, #retry{
+  display: none;
 }
