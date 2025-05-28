@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel= "stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <title>Quizz</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+    <button class="open-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Sidebar -->
+    <span class="sidebar" id="sidebar">
+        <nav>
+            <a href="home.html">Home Page</a>
+            <a href="Countries/India.html">India</a>
+            <a href="Countries/England.html">England</a>
+            <a href="Countries/Canada.html">Canada</a>
+            <a href="Countries/China.html">China</a>
+            <a href="Countries/CzechRepublic.html">Czech Republic</a>
+            <a href="Countries/Hungaria.html">Hungaria</a>
+            <a href="Countries/Malasia.html">Malaisia</a>
+            <a href="Countries/Poland.html">Poland</a>
+            <a href="Countries/SouthAfrica.html">South Africa</a>
+            <a href="Countries/USA.html">USA</a>
+            <a href="destinations-quizz.html" class="bottom">Quizz</a>
+            <a href="about-us.html" id="secondBottom">About Us</a>
+        </nav>
+    </span>
+
+      <main id="main" class="main">
+    <header>
+      <h1>Quiz</h1>
+    </header>
+
+    <section>
+      <h2>Test your knowledge</h2>
+      <p>Answer the following questions to see if you really know the 13 destinations!</p>
+      <form id="quiz-form">
+        <div>1. What is the most eco-friendly way of transportation ?</div>
+        <fieldset>
+          <input type="radio" id="1a" name="Radio1" value="A">
+          <label>a) The train</label>
+        </fieldset>
+        <fieldset>
+          <input type="radio" id="1b" name="Radio1" value="B">
+          <label>b) A commercial flight</label>
+        </fieldset>
+        <fieldset>
+          <input type="radio" id="1c" name="Radio1" value="C">
+          <label>c) A car</label>
+        </fieldset>
+        </p>
+
+        <br>
+        <br>
+
+        <div>Which of the following destinations can be reached by train ?</div>
+        <fieldset>
+          <input type="checkbox" id="2a" name="Box1" value="first">
+          <label>a) China </label>
+        </fieldset>
+        <fieldset>
+          <input type="checkbox" id="2b" name="Box2" value="Second">
+          <label>b) Malaisia</label>
+          </fieldset>
+        <fieldset>
+          <input type="checkbox" id="2c" name="Box3" value="Third">
+          <label>c) The USA</label>
+        </fieldset>
+        <fieldset>
+          <input type="checkbox" id="2d" name="Box4" value="Fourth">
+          <label>d) Poland</label>
+        </fieldset>
+
+      </form>
+    </section>
+
+    <section class="game-container">
+  <svg id="connections" class="connections-svg"></svg>
+  <br>
+  <br>
+  <h1><div>Connect the dots !</div></h1>
+  <p>Connect the countries to their main characteristic</p>
+  <br>
+  <br>
+  <br>
+  <section class="game">
+    <section class="countries">
+      <span class="item" onclick="selectCountry(this)" data-id="Canada">Canada</span>
+      <span class="item" onclick="selectCountry(this)" data-id="China">China</span>
+      <span class="item" onclick="selectCountry(this)" data-id="CzechRepublic">CzechRepublic</span>
+      <span class="item" onclick="selectCountry(this)" data-id="England">England</span>
+      <span class="item" onclick="selectCountry(this)" data-id="Hungaria">Hungaria</span>
+      <span class="item" onclick="selectCountry(this)" data-id="India">India</span>
+      <span class="item" onclick="selectCountry(this)" data-id="Malaisia">Malaisia</span>
+      <span class="item" onclick="selectCountry(this)" data-id="Poland">Poland</span>
+      <span class="item" onclick="selectCountry(this)" data-id="SouthAfrica">SouthAfrica</span>
+      <span class="item" onclick="selectCountry(this)" data-id="Usa">Usa</span>
+    </section>
+    <section class="characteristics">
+      <span class="item" onclick="selectCharacteristic(this)" data-id="CzechRepublic1">Czech Republic characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="China1">China characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Malaisia1">Malaisia characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Poland1">Poland characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Hungaria1">Hugaria characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="India1">India characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Canada1">Canada characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Usa1">USA characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="SouthAfrica1">South Africa characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="England1">England characteristic</span>
+
+    </section>
+  </section>
+  <input type="submit" value="Submit" id="Submit" onclick="checkAnswers()" />
+  <input type="submit" value="Try again" id="retry" onclick="retryQuizz()" />
+  <div id="quizzScore"></div>
+</section>
+
+  </main>
+    <script src="../javaLeScript.js"></script>
+
+      <footer style="text-align: center;">
+        <p>&copy; 2025 EcoTrails</p>
+        <p>
+            <a href="about-us.html">Find out more about us</a>
+        </p>
+    </footer>
+
+</body>
