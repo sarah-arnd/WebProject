@@ -12,8 +12,92 @@ footer{
   padding: 2px;
   margin: auto;
   border-radius: 15px;
-
-
+}
+#CanadaHeader{
+    background-image: url(../imgs/canada_flag.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 1.7em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#PolandHeader{
+    background-image: url(../imgs/poland_flag.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 1.7em;
+    text-shadow: #8b5353 2px 2px 4px;
+    color : #d0d1d2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#CzechRepublicHeader{
+    background-image: url(../imgs/cz_flag.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 1.7em;
+    text-shadow : #002677 2px 2px 6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#IndiaHeader{
+    background-image: url(../imgs/india_flag.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 1.7em;
+    text-shadow: #538b53 2px 2px 4px;
+    color : #f6b33f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#ChinaHeader{
+    background-image: url(../imgs/china_flag.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 1.7em;
+    color : #f6b33f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#HungaryHeader{
+    background-image: url(../imgs/hungaria_flag.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 1.7em;
+    text-shadow: #086a39 2px 2px 4px;
+    color : #cd1e1e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#SouthAfricaHeader{
+    background-image: url(../imgs/southAfrica_flag.png);
+    background-position: center;
+    background-size: cover;
+    font-size: 1.7em;
+    text-shadow: #ffffff 2px 2px 4px;
+    color : #d83434;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#EnglandHeader{
+    background-image: url(../imgs/england_flag.png);
+    background-position: center;
+    background-size: cover;
+    font-size: 1.7em;
+    text-shadow: #fcfcfc 2px 2px 4px;
+    color : #1d4e97;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#MalaisiaHeader{
+    background-image: url(../imgs/malaisia_flag.png);
+    background-position: center;
+    background-size: cover;
+    font-size: 1.7em;
+    text-shadow: #8b5353 2px 2px 4px;
+    color : #f6b33f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#USAHeader{
+    background-image: url(../imgs/usa_flag.png);
+    background-position: center;
+    background-size: cover;
+    font-size: 1.7em;
+    text-shadow: #7e9ded 2px 2px 4px;
+    color : #050d18df;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #logo{
