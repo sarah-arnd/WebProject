@@ -407,3 +407,13 @@ th {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+a {
+  color: green;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s, font-weight 0.3s;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+}
