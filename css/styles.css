@@ -1,6 +1,5 @@
 header{
-    background-color: #40c1e1;
-    color: #f8fafc;
+    color: #255531;
     text-align: center;
     padding: 10px;
     margin : 20px;
@@ -99,6 +98,15 @@ footer{
     color : #050d18df;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.headerQuizz{
+    background-position: center;
+    background-size: cover;
+    font-size: 1.7em;
+    text-shadow : #000000 2px 2px 4px;
+    color : #7e9e75;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 
 #logo{
   max-width: 600px;
@@ -106,16 +114,55 @@ footer{
   border-radius: 300px;
   border: rgba(74, 107, 47, 0.753) solid 3px;
 }
+h2{
+    font-size: 1.7em;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 body{
-    background-color: #f8fafc;
+    background-color: #40c1e1;
     color: #000000;
     font-family: Arial, sans-serif;
     text-align : center;
     margin-left: 44px;
     min-height: 100vh;
 }
+section{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    background-color: #d2e6f0;
+    border-radius: 10px;
+}
+fieldset{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    background-color: #7e9e75;
+    color : white;
+    border-radius: 10px;
+}
+#connect {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border : 2px solid #40c1e1;
+    color : #7e9e75;
+    border-radius: 10px;
 
+}
+#quizzTitle{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border : 2px solid #40c1e1;
+    color : #7e9e75;
+    border-radius: 10px;
+}
 * {
   box-sizing: border-box;
 }
@@ -353,7 +400,7 @@ th, td {
 }
 
 th {
-  background-color: #007BFF;
+  background-color: #40c1e1;
   color: white;
 }
 
