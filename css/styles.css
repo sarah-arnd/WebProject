@@ -256,6 +256,7 @@ fieldset{
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
+    margin: 0;
 }
 
 .bottom{
@@ -267,8 +268,7 @@ fieldset{
 
 #secondBottom{
   color: white;
-  border-bottom: #40c1e1 solid 2px;
-  border-right: #40c1e1 solid 2px;
+  border: #40c1e1 solid 2px;
 }
   
 .sidebar a {

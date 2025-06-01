@@ -13,7 +13,7 @@
     <button class="open-btn" onclick="toggleSidebar()">☰</button>
 
     <!-- Sidebar -->
-    <span class="sidebar" id="sidebar">
+    <div class="sidebar" id="sidebar">
         <nav>
             <a href="home.html">Home Page</a>
             <a href="Countries/India.html">India</a>
@@ -29,7 +29,7 @@
             <a href="destinations-quizz.html" class="bottom">Quizz</a>
             <a href="about-us.html" id="secondBottom">About Us</a>
         </nav>
-    </span>
+      </div>
 
       <main id="main" class="main">
     <header>
@@ -37,7 +37,7 @@
     </header>
 
     <section>
-      <h2>Test your knowledge</h2>
+      <h1>Test your knowledge</h1>
       <p>Answer the following questions to see if you really know the 13 destinations!</p>
       <form id="quiz-form">
         <div>1. What is the most eco-friendly way of transportation ?</div>
@@ -53,7 +53,6 @@
           <input type="radio" id="1c" name="Radio1" value="C">
           <label>c) A car</label>
         </fieldset>
-        </p>
 
         <br>
         <br>
@@ -83,7 +82,7 @@
   <svg id="connections" class="connections-svg"></svg>
   <br>
   <br>
-  <h1><div>Connect the dots !</div></h1>
+  <h1>Connect the dots !</h1>
   <p>Connect the countries to their main characteristic</p>
   <br>
   <br>
@@ -102,16 +101,16 @@
       <span class="item" onclick="selectCountry(this)" data-id="Usa">Usa</span>
     </section>
     <section class="characteristics">
-      <span class="item" onclick="selectCharacteristic(this)" data-id="CzechRepublic1">Czech Republic characteristic</span>
-      <span class="item" onclick="selectCharacteristic(this)" data-id="China1">China characteristic</span>
-      <span class="item" onclick="selectCharacteristic(this)" data-id="Malaisia1">Malaisia characteristic</span>
-      <span class="item" onclick="selectCharacteristic(this)" data-id="Poland1">Poland characteristic</span>
-      <span class="item" onclick="selectCharacteristic(this)" data-id="Hungaria1">Hugaria characteristic</span>
-      <span class="item" onclick="selectCharacteristic(this)" data-id="India1">India characteristic</span>
-      <span class="item" onclick="selectCharacteristic(this)" data-id="Canada1">Canada characteristic</span>
-      <span class="item" onclick="selectCharacteristic(this)" data-id="Usa1">USA characteristic</span>
-      <span class="item" onclick="selectCharacteristic(this)" data-id="SouthAfrica1">South Africa characteristic</span>
-      <span class="item" onclick="selectCharacteristic(this)" data-id="England1">England characteristic</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="CzechRepublic1">Still has a strong reliance on coal</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="China1">Is the leading country is renewable energy</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Malaisia1">The school includes over 130 nationalities</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Poland1">Won the 2020 title of European Green Capital</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Hungaria1">the school is french</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="India1">Has the largest school in the list</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Canada1">Offers two destinations</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="Usa1">Is the biggest producer of nuclear energy</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="SouthAfrica1">HAs eleven oficial languages</span>
+      <span class="item" onclick="selectCharacteristic(this)" data-id="England1">Is the closest by train</span>
 
     </section>
   </section>
